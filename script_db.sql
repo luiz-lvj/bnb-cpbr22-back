@@ -17,10 +17,12 @@ create table exames(
     public_key text unique
 );
 
-create table hospitais(
+create or alter table hospitais(
     id int primary key,
     nome text,
-    public_key text unique
+    public_key text unique,
+    username text,
+    password text
 );
 
 create table medicos(
