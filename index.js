@@ -8,6 +8,7 @@ import { loginHospital } from "./src/services/hospital.js";
 import { getHash } from "./src/services/hash.js";
 import { getHistoryForPacient } from "./src/services/history.js";
 import { getConsultasFromBlockchain, postConsultaToBlockChain } from "./src/services/consulta.js";
+import { getExamesFromBlockchain, postExameToBlockChain } from "./src/services/exames.js";
 
 
 
@@ -22,8 +23,8 @@ app.get("/usuarios/:hospitalId", async (req, res) => await getUsersFromHospital(
 app.get("/consultas/:pacienteToken", async (req, res) => await getConsultasFromBlockchain(req, res));
 app.post("/consultas/:idConsulta/:idBlock", async (req, res) => postConsultaToBlockChain(req, res)) // coloca a consulta na blockchain
 
-app.get("/exames/:pacienteToken", async (req, res) => await getConsultasFromBlockchain(req, res));
-app.post("/exames/:idExame/:idBlock", async (req, res) => postConsultaToBlockChain(req, res)) // coloca a consulta na blockchain
+app.get("/exames/:pacienteToken", async (req, res) => await getExamesFromBlockchain(req, res));
+app.post("/exames/:idExame/:idBlock", async (req, res) => postExameToBlockChain (req, res)) // coloca a consulta na blockchain
 
 
 app.get("/hospitais"); // body: name, token, username

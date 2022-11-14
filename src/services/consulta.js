@@ -11,7 +11,6 @@ export async function postConsultaToBlockChain(req, res){
     const area = req.body.area;
     const especificacao = req.body.especificacao;
     const medico = req.body.medicoAddress;
-    console.log(medico)
     const paciente = req.body.pacienteAddress;
     const epochTime = parseInt(Date.now()/1000);
     const laudo = req.body.laudo;

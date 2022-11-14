@@ -7,8 +7,8 @@ import artifacts from './contracts_deployed/MedicalData.json' assert { type: 'js
 const urlChain1 = 'http://localhost:8545';
 const urlChain2 = 'http://localhost:8546';
 
-const smartContract1 = '0xE689dB28C7a520EbaB710A8b678f8Aef59B29398';
-const smartContract2 = '0x2baB420DD7D353cd14bd23ea30965037bEb5802C';
+const smartContract1 = '0xdf0ab33e6cc9cbbcfaa8c87f5cf02aa50ab5a095';
+const smartContract2 = '0x52faf500a811bd87ecc618c51c1f35a16cb5150f';
 
 let chain1, chain2;
 

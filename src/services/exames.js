@@ -12,7 +12,7 @@ export async function postExameToBlockChain(req, res){
     const paciente = req.body.pacienteAddress;
     const epochTime = parseInt(Date.now()/1000);
     const laudo = req.body.laudo;
-    const consulta = parteInt(req.body.consulta)
+    const consulta = parseInt(req.body.consulta)
 
     try{
         lms.postExame(parseInt(idExame), nome, paciente, laudo, epochTime, consulta, {from: accounts[0]})
