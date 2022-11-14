@@ -17,7 +17,7 @@ create table exames(
     public_key text unique
 );
 
-create or alter table hospitais(
+create table hospitais(
     id int primary key,
     nome text,
     public_key text unique,
